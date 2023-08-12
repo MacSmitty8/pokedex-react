@@ -14,3 +14,14 @@ body{
     padding-top: 100px;
     display: flex;
 }
+.box{
+    width: 300px;
+    background-color:rgb(43, 43, 43);
+    border-radius: 1rem;
+    padding: 0 1.5rem;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    color: white;
+}
