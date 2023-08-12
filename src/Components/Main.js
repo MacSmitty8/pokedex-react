@@ -13,6 +13,10 @@ const Main = () => {
                     <Box />
                     <Box />
                 </div>
+                <div className="button-group">
+                    <button>Previous</button>
+                    <button>Next</button>
+                </div>
                 <div className="right-details">
                     <PokemonInfo />
                 </div>

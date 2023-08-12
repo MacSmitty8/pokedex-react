@@ -75,3 +75,20 @@ body {
     border-radius: 8px;
    text-shadow: 1px 1px #aaaaaa;
 }
+.base-stat{
+    margin-top: 2rem;
+}
+.button-group{
+    display: flex;
+}
+.button-group button{
+    outline: none;
+    border: none;
+    width: 150px;
+    padding: 0.3rem 0;
+    margin: 1rem;
+    font-size: 17px;
+    font-weight: bold;
+    color: rgb(102, 99, 99);
+    background-color:rgb(255, 255, 255);
+}
