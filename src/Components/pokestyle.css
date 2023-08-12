@@ -53,3 +53,25 @@ body {
 .right-details img{
     margin: 2rem;
 }
+
+.right-details h1{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.abilities{
+    width: 30%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.abilities .group{
+    background-color: #ff7f07;
+    color: white;
+    padding: 0.5rem;
+    font-size: 12px;
+    border-radius: 8px;
+   text-shadow: 1px 1px #aaaaaa;
+}

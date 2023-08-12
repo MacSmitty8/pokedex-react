@@ -5,7 +5,7 @@ const PokemonInfo = () => {
     <>
         <div>
       <h1>Charmander</h1>
-      <img src=""https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/4.svg" alt="" />
+      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/4.svg" alt="" />
       <div className="abilities">
         <div className="group">
             <h2>Blaze</h2>
