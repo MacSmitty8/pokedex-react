@@ -41,3 +41,15 @@ body {
     box-sizing: border-box;
     color: white;
 }
+
+.right-details{
+    width: 50%;
+    text-align: center;
+    color: black;
+    position: fixed;
+    top: 100px;
+    right: 10px;
+}
+.right-details img{
+    margin: 2rem;
+}

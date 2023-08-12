@@ -1,5 +1,6 @@
 import React from 'react'
 import Box from './Box'
+import PokemonInfo from './PokemonInfo'
 const Main = () => {
     return (
         <>
@@ -13,7 +14,7 @@ const Main = () => {
                     <Box />
                 </div>
                 <div className="right-details">
-
+                    <PokemonInfo />
                 </div>
             </div>
         </>
