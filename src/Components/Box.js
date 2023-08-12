@@ -5,8 +5,8 @@ const Box = () => {
     <>
         <div className="box">
       <h2>1</h2>
-      <img src="./images/pikachu.png" alt ="" />
-      <h2>Pikachu</h2>
+      <img src="./images/charmander.png" alt ="" />
+      <h2>Charmander</h2>
       </div>
     </>
   )
