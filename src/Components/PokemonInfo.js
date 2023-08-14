@@ -4,9 +4,12 @@ const PokemonInfo = ({data}) => {
     console.log(data);
   return (
     <>
+    {
+    (!data)?"": (
+        <> 
         <div>
-      <h1>Charmander</h1>
-      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/4.svg" alt="" />
+      <h1>{data.name}</h1>
+      <img src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/${data.id}.svg`} alt="" />
       <div className="abilities">
         <div className="group">
             <h2>Blaze</h2>
@@ -23,6 +26,10 @@ const PokemonInfo = ({data}) => {
         <h3>Special-Attack: 50</h3>
         <h3>Speed: 65</h3>
       </div>
+        </>
+    )
+    }
+        
     </>
   )
 }
