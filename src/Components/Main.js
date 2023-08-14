@@ -11,7 +11,7 @@ const Main = () => {
     const pokeFun = async () => {
         setLoading(true)
         const res = await axios.get(url);
-        console.log(res)
+        console.log(res.data.results)
     }
     useEffect(() => {
         pokeFun()
