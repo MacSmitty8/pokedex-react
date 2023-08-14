@@ -10,7 +10,7 @@ const Main = () => {
     const [nextUrl, setNextUrl] = useState();
     const [prevUrl, setPrevUrl] = useState();
     const [pokeDex, setPokeDex] = useState();
- 
+
     const pokeFun = async () => {
         setLoading(true)
         const res = await axios.get(url);
@@ -21,12 +21,12 @@ const Main = () => {
         setLoading(false);
         console.log(pokeData)
     }
-    const getPokemon = async(res)=>{
+    const getPokemon = async (res) => {
         res.map(async (item) => {
             const result = await axios.get(item.url)
             setPokeData(state => {
-                state=[...state, result.data]
-                state.sort((a,b) => a.id>b.id?1:-1)
+                state = [...state, result.data]
+                state.sort((a, b) => a.id > b.id ? 1 : -1)
                 return state;
             })
         })
@@ -40,17 +40,22 @@ const Main = () => {
                 <div className="left-details">
                     {/* This will keep everything on the left side of the page,
                  meaning the boxes listing the Pokemon will be rendered on the left, as well as the buttons. */}
-                    <Box pokemon={pokeData} loading={loading} infoPokemon={poke => setPokeDex(poke)}/>
+                    <Box pokemon={pokeData} loading={loading} infoPokemon={poke => setPokeDex(poke)} />
                     <div className="button-group">
-                        <button onClick={() =>{setUrl(prevUrl)
+                        <button onClick={() => {
+                            setPokeData();
+                            setUrl(prevUrl)
                         }}>Previous</button>
-                        <button onClick={() => {setUrl(nextUrl)}}>Next</button>
+                        <button onClick={() => {
+                            setPokeData();
+                            setUrl(nextUrl)
+                        }}>Next</button>
                         {/* Buttons that will be used scroll through different kinds of Pokemon, as the API contains alot of them. */}
                     </div>
                 </div>
 
                 <div className="right-details">
-                    <PokemonInfo data={pokeDex}/>
+                    <PokemonInfo data={pokeDex} />
                     {/* This will align the Pokemon information on the right side of the webpage, 
                     so the name, the picture, it's moves and stats will all be visible here. */}
                 </div>
