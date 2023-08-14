@@ -43,11 +43,11 @@ const Main = () => {
                     <Box pokemon={pokeData} loading={loading} infoPokemon={poke => setPokeDex(poke)} />
                     <div className="button-group">
                         <button onClick={() => {
-                            setPokeData();
+                            setPokeData([]);
                             setUrl(prevUrl)
                         }}>Previous</button>
                         <button onClick={() => {
-                            setPokeData();
+                            setPokeData([]);
                             setUrl(nextUrl)
                         }}>Next</button>
                         {/* Buttons that will be used scroll through different kinds of Pokemon, as the API contains alot of them. */}
