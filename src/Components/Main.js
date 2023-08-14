@@ -33,7 +33,7 @@ const Main = () => {
     }
     useEffect(() => {
         pokeFun();
-    }, { url })
+    }, [url])
     return (
         <>
             <div className="container">
@@ -42,8 +42,9 @@ const Main = () => {
                  meaning the boxes listing the Pokemon will be rendered on the left, as well as the buttons. */}
                     <Box pokemon={pokeData} loading={loading} infoPokemon={poke => setPokeDex(poke)}/>
                     <div className="button-group">
-                        <button>Previous</button>
-                        <button>Next</button>
+                        <button onClick={() =>{setUrl(prevUrl)
+                        }}>Previous</button>
+                        <button onClick={() => {setUrl(nextUrl)}}>Next</button>
                         {/* Buttons that will be used scroll through different kinds of Pokemon, as the API contains alot of them. */}
                     </div>
                 </div>
