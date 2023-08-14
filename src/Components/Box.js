@@ -13,7 +13,7 @@ const Box = ({ pokemon, loading }) => {
                 <div className="box">
                   <h2>{item.id}</h2>
                   <img src={item.sprites.front_default} alt="" />
-                  <h2>Charmander</h2>
+                  <h2>{item.name}</h2>
                 </div>
                 {/* This will be where the different selectable pokemon boxes 
       will be put for the user to click on to render. */}

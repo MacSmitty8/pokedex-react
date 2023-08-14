@@ -31,7 +31,7 @@ const Main = () => {
         })
     }
     useEffect(() => {
-        pokeFun()
+        pokeFun();
     }, { url })
     return (
         <>
