@@ -1,6 +1,7 @@
 import React from 'react'
 
-const PokemonInfo = () => {
+const PokemonInfo = ({data}) => {
+    console.log(data);
   return (
     <>
         <div>

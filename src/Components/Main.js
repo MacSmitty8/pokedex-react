@@ -9,6 +9,7 @@ const Main = () => {
     const [url, setUrl] = useState("https://pokeapi.co/api/v2/pokemon/")
     const [nextUrl, setNextUrl] = useState();
     const [prevUrl, setPrevUrl] = useState();
+    const [pokeDex, setPokeDex] = useState();
  
     const pokeFun = async () => {
         setLoading(true)
@@ -39,7 +40,7 @@ const Main = () => {
                 <div className="left-details">
                     {/* This will keep everything on the left side of the page,
                  meaning the boxes listing the Pokemon will be rendered on the left, as well as the buttons. */}
-                    <Box pokemon={pokeData} loading={loading}/>
+                    <Box pokemon={pokeData} loading={loading} infoPokemon={poke => setPokeDex(poke)}/>
                     <div className="button-group">
                         <button>Previous</button>
                         <button>Next</button>
@@ -48,7 +49,7 @@ const Main = () => {
                 </div>
 
                 <div className="right-details">
-                    <PokemonInfo />
+                    <PokemonInfo data={pokeDex}/>
                     {/* This will align the Pokemon information on the right side of the webpage, 
                     so the name, the picture, it's moves and stats will all be visible here. */}
                 </div>

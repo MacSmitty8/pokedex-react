@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Box = ({ pokemon, loading }) => {
+const Box = ({ pokemon, loading, infoPokemon }) => {
   console.log(pokemon)
   return (
     <>
@@ -10,7 +10,7 @@ const Box = ({ pokemon, loading }) => {
           pokemon.map((item) => {
             return (
               <>
-                <div className="box">
+                <div className="box" key={item.id} onClick={() => infoPokemon(item)}>
                   <h2>{item.id}</h2>
                   <img src={item.sprites.front_default} alt="" />
                   <h2>{item.name}</h2>
