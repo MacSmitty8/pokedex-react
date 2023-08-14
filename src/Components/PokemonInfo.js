@@ -22,18 +22,18 @@ const PokemonInfo = ({ data }) => {
                                         )
                                     })
                                 }
-
-                                <div className="group">
-                                    <h2>Solar-Power</h2>
-                                </div>
                             </div>
                         </div>
                         <div className="base-stat">
-                            <h3>HP: 30</h3>
-                            <h3>Attack: 52</h3>
-                            <h3>Defense: 43</h3>
-                            <h3>Special-Attack: 50</h3>
-                            <h3>Speed: 65</h3>
+                           {
+                            data.stats.map((poke) =>{
+                                return(
+                                    <>
+                                        <h3>{poke.stat.name} : {poke.base_stat}</h3>
+                                    </>
+                                )
+                            })
+                           }
                         </div>
                     </>
                 )
