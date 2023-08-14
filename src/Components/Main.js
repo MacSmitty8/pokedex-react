@@ -18,11 +18,15 @@ const Main = () => {
         setPrevUrl(res.data.previous);
         getPokemon(res.data.results);
         setLoading(false);
+        console.log(pokeData)
     }
     const getPokemon = async(res)=>{
         res.map(async (item) => {
             const result = await axios.get(item.url)
-            console.log(result.data)
+            setPokeData(state => {
+                state=[...state, result.data]
+                return state;
+            })
         })
     }
     useEffect(() => {
@@ -34,18 +38,7 @@ const Main = () => {
                 <div className="left-details">
                     {/* This will keep everything on the left side of the page,
                  meaning the boxes listing the Pokemon will be rendered on the left, as well as the buttons. */}
-                    <Box />
-                    <Box />
-                    <Box />
-                    <Box />
-                    <Box />
-                    <Box />
-                    <Box />
-                    <Box />
-                    <Box />
-                    <Box />
-                    <Box />
-                    <Box />
+                    <Box pokemon={pokeData} loading={loading}/>
                     <div className="button-group">
                         <button>Previous</button>
                         <button>Next</button>

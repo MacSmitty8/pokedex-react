@@ -1,6 +1,7 @@
 import React from 'react'
 
-const Box = () => {
+const Box = ({pokemon, loading}) => {
+  console.log(pokemon)
   return (
     <>
         <div className="box">
