@@ -52,6 +52,7 @@ body {
 }
 .right-details img{
     margin: 2rem;
+    height: 180px;
 }
 
 .right-details h1{
