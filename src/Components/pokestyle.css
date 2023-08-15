@@ -99,3 +99,7 @@ body {
     color: rgb(102, 99, 99);
     background-color: rgb(255, 255, 255);
 }
+
+.button-group:hover{
+    opacity: 0.7;
+}
