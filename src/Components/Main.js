@@ -42,10 +42,10 @@ const Main = () => {
                  meaning the boxes listing the Pokemon will be rendered on the left, as well as the buttons. */}
                     <Box pokemon={pokeData} loading={loading} infoPokemon={poke => setPokeDex(poke)} />
                     <div className="button-group">
-                        <button onClick={() => {
+                    {prevUrl &&<button onClick={() => {
                             setPokeData([]);
                             setUrl(prevUrl)
-                        }}>Previous</button>
+                        }}>Previous</button>}
                         <button onClick={() => {
                             setPokeData([]);
                             setUrl(nextUrl)
