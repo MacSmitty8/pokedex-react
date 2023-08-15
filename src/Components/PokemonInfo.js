@@ -25,16 +25,17 @@ const PokemonInfo = ({ data }) => {
                             </div>
                         </div>
                         <div className="base-stat">
-                           {
-                            data.stats.map((poke) =>{
-                                return(
-                                    <>
-                                        <h3>{poke.stat.name} : {poke.base_stat}</h3>
-                                    </>
-                                )
-                            })
-                           }
+                            {
+                                data.stats.map((poke) => {
+                                    return (
+                                        <>
+                                            <h3>{poke.stat.name} : {poke.base_stat}</h3>
+                                        </>
+                                    )
+                                })
+                            }
                         </div>
+                        {/* Takes in the Pokemon's name, stats, abilities and image from the API and renders them on the right side of the page. */}
                     </>
                 )
             }

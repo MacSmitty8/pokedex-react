@@ -27,6 +27,7 @@ const Main = () => {
             setPokeData(state => {
                 state = [...state, result.data]
                 state.sort((a, b) => a.id > b.id ? 1 : -1)
+                // The above makes what's returned appear in a numbered order.
                 return state;
             })
         })
@@ -34,6 +35,8 @@ const Main = () => {
     useEffect(() => {
         pokeFun();
     }, [url])
+
+
     return (
         <>
             <div className="container">

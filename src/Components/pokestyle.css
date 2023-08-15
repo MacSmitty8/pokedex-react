@@ -3,7 +3,7 @@
 * {
     padding: 0;
     margin: 0;
-     font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;
 
 }
 
@@ -25,7 +25,7 @@ body {
 
 .left-details {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px,0.5fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 0.5fr));
     grid-gap: 2rem;
 }
 
@@ -42,7 +42,7 @@ body {
     color: white;
 }
 
-.right-details{
+.right-details {
     width: 50%;
     text-align: center;
     color: black;
@@ -50,16 +50,18 @@ body {
     top: 100px;
     right: 10px;
 }
-.right-details img{
+
+.right-details img {
     margin: 2rem;
     height: 180px;
 }
 
-.right-details h1{
+.right-details h1 {
     text-transform: uppercase;
     font-weight: bold;
 }
-.abilities{
+
+.abilities {
     width: 30%;
     margin: auto;
     display: flex;
@@ -68,21 +70,25 @@ body {
     margin-top: 1rem;
 }
 
-.abilities .group{
-    background-color: #ff7f07;
-    color: white;
+.abilities .group {
+    background-color: #ffffff;
+    color: rgb(122, 119, 119);
     padding: 0.5rem;
     font-size: 12px;
     border-radius: 8px;
-   text-shadow: 1px 1px #aaaaaa;
+    border-style: solid;
+    border-color: gray;
 }
-.base-stat{
+
+.base-stat {
     margin-top: 2rem;
 }
-.button-group{
+
+.button-group {
     display: flex;
 }
-.button-group button{
+
+.button-group button {
     outline: none;
     border: none;
     width: 150px;
@@ -91,5 +97,5 @@ body {
     font-size: 17px;
     font-weight: bold;
     color: rgb(102, 99, 99);
-    background-color:rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
 }
