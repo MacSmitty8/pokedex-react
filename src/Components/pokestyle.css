@@ -40,6 +40,7 @@ body {
     justify-content: space-between;
     box-sizing: border-box;
     color: white;
+    text-transform: uppercase;
 }
 
 .right-details {
@@ -78,10 +79,12 @@ body {
     border-radius: 8px;
     border-style: solid;
     border-color: gray;
+    text-transform: uppercase;
 }
 
 .base-stat {
     margin-top: 2rem;
+    text-transform: uppercase;
 }
 
 .button-group {
